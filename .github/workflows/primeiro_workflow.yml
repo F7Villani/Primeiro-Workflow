@@ -20,4 +20,9 @@ jobs:
         run: pwd
       # terceiro step
       - name: Qual o conteúdo do diretório, incluindo arquivos ocultos?
-        run: echo "See you, Github Action!"
+        run: ls -a
+      - name: Até mais!
+        run: |
+          echo "See you, Github Action!"
+          echo "Bye!"
+          echo "Bye yet again"
