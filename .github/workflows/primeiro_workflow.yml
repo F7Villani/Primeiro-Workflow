@@ -29,10 +29,8 @@ jobs:
           echo "See you, Github Action!"
           echo "Bye!"
           echo "Bye yet again"
-          cd ../meu-app
-          ls -a
       - name: Deploy react app to github pages
-        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+        uses: actions/checkou@v2
 
 
 
