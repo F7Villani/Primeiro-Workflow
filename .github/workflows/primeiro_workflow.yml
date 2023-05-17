@@ -29,10 +29,6 @@ jobs:
           echo "See you, Github Action!"
           echo "Bye!"
           echo "Bye yet again"
-  
-  deploy_github_pages:
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.1
 
