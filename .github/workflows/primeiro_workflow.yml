@@ -29,7 +29,9 @@ jobs:
           echo "See you, Github Action!"
           echo "Bye!"
           echo "Bye yet again"
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+      - name: Deploy react app to github pages
+        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+        
+
 
 
