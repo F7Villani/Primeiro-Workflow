@@ -30,6 +30,6 @@ jobs:
           echo "Bye!"
           echo "Bye yet again"
       - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
 
 
