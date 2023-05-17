@@ -10,7 +10,7 @@ jobs:
   # nome do primeiro job
   primeiro_job:
     # runner do primeiro job
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps: 
       # primeiro step
       - name: Hello, Github Actions!
