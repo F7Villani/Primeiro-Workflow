@@ -2,7 +2,10 @@
 name: Meu primeiro workflow
 
 # evento, ou seja, quando ele entra em execução
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+      - main
 
 # especificando os jobs deste workflow
 jobs:
