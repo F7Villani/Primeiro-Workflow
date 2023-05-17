@@ -30,7 +30,7 @@ jobs:
           echo "Bye!"
           echo "Bye yet again"
       - name: Deploy react app to github pages
-        uses: actions/checkou@v2
+        uses: actions/checkout@v2
 
 
 
