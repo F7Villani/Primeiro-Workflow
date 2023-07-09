@@ -34,16 +34,15 @@ jobs:
       - name: pull-request
         run: |
           pr_exists=$(gh pr list --base=develop --head=${{ github.ref_name }} --json number -q ".[].number")
-          pr_exists=$(echo "$pr_exists" | awk '{$1=$1};1')
+
           echo "$pr_exists"
-          if [ -z "$pr_exists" ]; then
-            gh pr create --head ${{ github.ref_name }} --base main --title "Pull request title" --body "Pull request body"
-          else
-            # A PR já existe, então atualize a PR existente
+          
+          if [[ "$pr_exists" =~ [0-9]+ ]]; then
             pr_number=$(echo "$pr_exists" | head -n 1)
             gh pr update "$pr_number" --title "Minha Pull Request (Atualizada)" --body "Aqui está a minha PR atualizada"
+          else
+            gh pr create --head ${{ github.ref_name }} --base main --title "Pull request title" --body "Pull request body"
           fi
-
           echo "teste"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
