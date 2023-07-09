@@ -33,10 +33,10 @@ jobs:
         uses: actions/checkout@v2
       - name: pull-request
         run: |
-          pr_exists=$(gh pr list --base=develop --head=${{ github.ref_name }} --json number -q ".[].number")
+          pr_exists=$(gh pr list --base=main --head=${{ github.ref_name }} --json number -q ".[].number")
 
           echo "$pr_exists"
-          
+
           if [[ "$pr_exists" =~ [0-9]+ ]]; then
             pr_number=$(echo "$pr_exists" | head -n 1)
             gh pr update "$pr_number" --title "Minha Pull Request (Atualizada)" --body "Aqui está a minha PR atualizada"
