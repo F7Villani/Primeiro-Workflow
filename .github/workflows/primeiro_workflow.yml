@@ -38,7 +38,7 @@ jobs:
           commit-message: Update report
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          branch: "auto-pr-branch"
+          branch: "main"
           title: '[Example] Update report'
           body: |
             Update report
