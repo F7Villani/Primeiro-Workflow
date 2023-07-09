@@ -39,8 +39,8 @@ jobs:
           pr_label: "feature, automated pr"
           pr_title: "[Example] Simple demo"
 
-      -name: teste
-       script: echo "teste"
+      - name: teste
+        script: echo "teste"
       
 
 
