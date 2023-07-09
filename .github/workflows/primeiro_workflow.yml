@@ -40,7 +40,7 @@ jobs:
           pr_title: "[Example] Simple demo"
 
       - name: teste
-        script: echo "teste"
+        run: echo "teste"
       
 
 
