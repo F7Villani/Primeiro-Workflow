@@ -47,8 +47,6 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-pull-request
           labels: |
-            report
-            automated pr
       
 
 
