@@ -5,7 +5,7 @@ name: Meu primeiro workflow
 on: 
   push:
     branches:
-      - main
+      - develop
 
 # especificando os jobs deste workflow
 jobs:
