@@ -35,7 +35,7 @@ jobs:
         run: |
           pr_exists=$(gh pr list --base=develop --head=${{ github.ref_name }} --json number -q ".[].number")
           echo pr_exists
-          if [[ -z "$pr_exists" ]]; then
+          if [ -z "$pr_exists" ]; then
             gh pr create --head ${{ github.ref_name }} --base main --title "Pull request title" --body "Pull request body"
           else
             # A PR já existe, então atualize a PR existente
