@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v2
       - name: pull-request
         run: |
-          gh pr create --base ${{ github.ref_name }} --head main --title "Pull request title" --body "Pull request body"
+          gh pr create --head ${{ github.ref_name }} --base main --title "Pull request title" --body "Pull request body"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
