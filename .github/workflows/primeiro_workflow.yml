@@ -43,7 +43,7 @@ jobs:
           else
             gh pr create --head ${{ github.ref_name }} --base main --title "Pull request title" --body "Pull request body"
           fi
-          echo "teste"
+          echo "teste 2"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
